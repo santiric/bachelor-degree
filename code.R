@@ -25,6 +25,8 @@ Y=dataset[,c(1,2)]
 X=dataset[,-c(1,2,11)]
 library(CCA)
 
+
+
 X.sd=scale(X)
 Y.sd=scale(Y)
 first.cca=cc(X.sd,Y.sd)
@@ -50,5 +52,5 @@ tilde.cca=cc(U.tilde,first.cca$scores$yscores)
 tilde.cca$cor
 round(tilde.cca$xcoef,5) #non cambiamo i risultati usando U tilde
 
-
+#prova
 
